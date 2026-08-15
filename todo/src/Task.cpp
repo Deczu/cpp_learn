@@ -2,14 +2,15 @@
 #include <iostream>
 #include <string>
 
-Task::Task()
+Task::Task(int id)
 {
+    setTaskId(id);
     std::cout<<"Constructor invoked\n";
 }
 
 Task::~Task()
 {
-    std::cout<<"Destructor invoked";
+    std::cout<<"Destructor invoked\n";
 }
 
 const std::vector<std::string> Task::statusNames = {

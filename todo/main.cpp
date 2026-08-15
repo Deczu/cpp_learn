@@ -10,11 +10,11 @@ int main()
     std::vector<Task> tasklist {};
     std::string description;
     while(true){
-        Task t;
+        Task t(taskid);
         cout << "Provide TASK description\n";
         cin >> description;
         t.setDescription(description);
-        t.setTaskId(taskid);
+        //t.setTaskId(taskid);
         taskid++;
         tasklist.emplace_back(t);
         cout << "PRINT TASK LIST !\n";

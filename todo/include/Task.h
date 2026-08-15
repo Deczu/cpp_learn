@@ -6,7 +6,7 @@
 class Task
 {
     public:
-        Task();
+        Task(int id);
         virtual ~Task();
         enum valid_statuses {
             ToDo,
