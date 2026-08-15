@@ -18,6 +18,7 @@ class Task
         void setDescription(const std::string desc);
         std::string getDescription();
         void printTaskInfo();
+        void getJsonString();
 
     protected:
         std::string description = "";

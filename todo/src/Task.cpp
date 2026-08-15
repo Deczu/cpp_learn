@@ -33,3 +33,15 @@ void Task::printTaskInfo()
 {
     std::cout << "TASK[id="<<id<<"]"<<"[Status="<<statusNames.at(status)<<"]"<<"[Description="<<description<<"]\n";
 }
+
+
+void Task::getJsonString(){
+// TODO: change to std::string -> return instead of cout
+    std::string jsonObj = "{\n";
+    jsonObj+= " \"id\":"+ std::to_string(id)+",\n";
+    jsonObj+= " \"status\":\""+ statusNames.at(status)+"\",\n";
+    jsonObj+= " \"desc\":\""+ description+"\"\n";
+    jsonObj +="}";
+    std::cout << "JSON Obj: \n"<<jsonObj<<std::endl;
+}
+
