@@ -28,6 +28,10 @@ std::string Task::getDescription()
     return description;
 }
 
+void Task::setTaskId(int task_id){
+    id = task_id;
+}
+
 
 void Task::printTaskInfo()
 {

@@ -6,14 +6,16 @@ using namespace std;
 int main()
 {
     cout << "Hello world!" << endl;
+    int taskid = 0;
     std::vector<Task> tasklist {};
-
-            std::string description;
+    std::string description;
     while(true){
         Task t;
         cout << "Provide TASK description\n";
         cin >> description;
         t.setDescription(description);
+        t.setTaskId(taskid);
+        taskid++;
         tasklist.emplace_back(t);
         cout << "PRINT TASK LIST !\n";
         for (auto i : tasklist){

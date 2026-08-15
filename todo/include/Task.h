@@ -16,6 +16,7 @@ class Task
         static const std::vector<std::string> statusNames;
 
         void setDescription(const std::string desc);
+        void setTaskId(int id);
         std::string getDescription();
         void printTaskInfo();
         void getJsonString();
